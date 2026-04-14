@@ -195,6 +195,13 @@
       "name": "Japan",
       "language": "Japanese",
       "source": "reuters-jp"
+    },
+    {
+      "countryCode": 82,
+      "languageCode": 1,
+      "name": "Ireland",
+      "language": "English",
+      "source": ["reuters", "tuairisc"]
     }
   ]
 }
