@@ -9,6 +9,7 @@ import (
 	"NewsChannel/news/reuters-jp"
 	"NewsChannel/news/rtve"
 	"NewsChannel/news/tagesschau"
+	"NewsChannel/news/tuairisc"
 	_ "embed"
 	"encoding/json"
 	"fmt"
@@ -49,6 +50,8 @@ func (n *News) setSource(sourceName string) {
 		n.source = reutersjp.NewReuters(n.oldArticleTitles)
 	case "ap":
 		n.source = ap.NewAP(n.oldArticleTitles)
+	case "tuairisc": 
+		n.source = tuairisc.NewTuairisc(n.oldArticleTitles)
 	default:
 		n.source = reuters.NewReuters(n.oldArticleTitles, n.currentCountryCode)
 	}
