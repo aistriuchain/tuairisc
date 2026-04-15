@@ -201,7 +201,7 @@
       "languageCode": 1,
       "name": "Ireland",
       "language": "English",
-      "source": ["reuters", "tuairisc"]
+      "source": "tuairisc"
     }
   ]
 }
