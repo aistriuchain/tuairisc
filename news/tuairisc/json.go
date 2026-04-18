@@ -29,7 +29,7 @@ type Item struct {
 	PubDate        string         `xml:"pubDate"`
 	GUID           string         `xml:"guid"`
 	Category       string         `xml:"category"`
-	Creator        string         `xml:"creator"`
+	Creator        string         `xml:"dc:creator"`
 	MediaThumbnail MediaThumbnail `xml:"thumbnail"`
 }
 
